@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import { whatsappLink } from "@/content/site";
 
 const links = [
@@ -16,9 +17,15 @@ export default function Nav() {
   return (
     <header className="sticky top-0 z-40 w-full border-b border-slate-200/70 bg-white/80 backdrop-blur">
       <div className="mx-auto flex h-16 max-w-content items-center justify-between px-4 sm:px-6">
-        <a href="#top" className="flex items-center gap-2 text-lg font-bold tracking-tight text-brand-700">
-          <span className="inline-flex h-7 w-7 items-center justify-center rounded-md bg-brand-600 text-white">B</span>
-          Beeqik
+        <a href="#top" aria-label="Beeqik home" className="flex items-center">
+          <Image
+            src="/logo-main.png"
+            alt="Beeqik"
+            width={408}
+            height={127}
+            priority
+            className="h-12 w-auto"
+          />
         </a>
 
         <nav className="hidden gap-7 md:flex">
@@ -34,7 +41,7 @@ export default function Nav() {
             href={whatsappLink()}
             target="_blank"
             rel="noopener noreferrer"
-            className="rounded-lg bg-brand-600 px-4 py-2 text-sm font-semibold text-white shadow-sm hover:bg-brand-700"
+            className="rounded-lg border border-slate-900 px-4 py-2 text-sm font-semibold text-slate-900 transition hover:bg-slate-900 hover:text-white"
             data-cta="nav-whatsapp"
           >
             WhatsApp
@@ -82,7 +89,7 @@ export default function Nav() {
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => setOpen(false)}
-              className="mt-2 rounded-lg bg-brand-600 px-4 py-3 text-center text-sm font-semibold text-white"
+              className="mt-2 rounded-lg border border-slate-900 px-4 py-3 text-center text-sm font-semibold text-slate-900 transition hover:bg-slate-900 hover:text-white"
               data-cta="nav-whatsapp-mobile"
             >
               WhatsApp

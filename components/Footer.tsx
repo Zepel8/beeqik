@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { SITE, whatsappLink, mailtoLink } from "@/content/site";
 
 export default function Footer() {
@@ -5,9 +6,14 @@ export default function Footer() {
     <footer className="border-t border-slate-200 bg-slate-900 text-slate-300">
       <div className="mx-auto flex max-w-content flex-col gap-6 px-4 py-10 sm:px-6 md:flex-row md:items-center md:justify-between">
         <div>
-          <div className="flex items-center gap-2 text-lg font-bold text-white">
-            <span className="inline-flex h-7 w-7 items-center justify-center rounded-md bg-brand-600 text-white">B</span>
-            {SITE.name}
+          <div className="flex items-center">
+            <Image
+              src="/logo-footer.png"
+              alt="Beeqik"
+              width={357}
+              height={85}
+              className="h-8 w-auto"
+            />
           </div>
           <p className="mt-2 max-w-md text-sm text-slate-400">
             Reliable China sourcing partner. Verified suppliers, fast samples, custom packaging.

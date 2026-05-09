@@ -25,7 +25,7 @@ export default function HowItWorks() {
               key={s.n}
               className="relative rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:border-brand-300"
             >
-              <span className="text-xs font-bold tracking-widest text-brand-600">{s.n}</span>
+              <span className="text-xs font-bold tracking-widest text-accent-600">{s.n}</span>
               <h3 className="mt-2 text-base font-semibold text-slate-900">{s.title}</h3>
               <p className="mt-2 text-sm leading-relaxed text-slate-600">{s.body}</p>
             </li>

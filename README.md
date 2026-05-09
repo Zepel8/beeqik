@@ -43,8 +43,8 @@ npm run start
 
 To add real product photos: drop a WebP/JPG in `public/products/` and set `image:
 "/products/your-file.webp"` on the matching entry in `content/products.ts`. Without
-an image, the card shows a colored gradient with the product initials — fine for
-launch.
+an image, the card shows a solid color block (the `bg` field) with the product
+initials — fine for launch.
 
 ## Environment variables
 

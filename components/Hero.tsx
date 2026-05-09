@@ -10,15 +10,16 @@ const highlights = [
 export default function Hero() {
   return (
     <section id="top" className="relative overflow-hidden bg-gradient-to-b from-brand-50 via-white to-white">
-      <div className="absolute inset-x-0 -top-24 -z-10 h-[480px] bg-[radial-gradient(ellipse_at_top,_rgba(47,142,255,0.18),_transparent_60%)]" />
+      <div className="absolute inset-x-0 -top-24 -z-10 h-[480px] bg-[radial-gradient(ellipse_at_top,_rgba(254,215,42,0.35),_transparent_60%)]" />
       <div className="mx-auto max-w-content px-4 pb-20 pt-16 sm:px-6 sm:pt-24">
         <div className="mx-auto max-w-3xl text-center">
-          <p className="mb-4 inline-flex items-center gap-2 rounded-full border border-brand-200 bg-white px-3 py-1 text-xs font-medium text-brand-700">
-            <span className="h-1.5 w-1.5 rounded-full bg-brand-500" />
+          <p className="mb-4 inline-flex items-center gap-2 rounded-full border border-accent-200 bg-white px-3 py-1 text-xs font-medium text-slate-700">
+            <span className="h-1.5 w-1.5 rounded-full bg-accent-400" />
             Your Trusted Sourcing Partner in China
           </p>
           <h1 className="text-balance text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl md:text-6xl">
-            Reliable China Sourcing <span className="text-brand-600">Without the Alibaba Headache</span>
+            Reliable China Sourcing{" "}
+            <span className="text-forest-600">Without the Alibaba Headache</span>
           </h1>
           <p className="mx-auto mt-6 max-w-2xl text-pretty text-lg leading-relaxed text-slate-600">
             Work directly with verified suppliers, receive fast samples, and source with confidence
@@ -28,7 +29,7 @@ export default function Hero() {
           <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
             <a
               href="#contact"
-              className="w-full rounded-lg bg-brand-600 px-6 py-3 text-base font-semibold text-white shadow-sm transition hover:bg-brand-700 sm:w-auto"
+              className="w-full rounded-lg bg-slate-900 px-6 py-3 text-base font-semibold text-white shadow-sm transition hover:bg-slate-950 sm:w-auto"
               data-cta="hero-quote"
             >
               Get a Free Quote

@@ -157,7 +157,7 @@ export default function Contact() {
             <button
               type="submit"
               disabled={status === "submitting"}
-              className="mt-5 inline-flex w-full items-center justify-center rounded-lg bg-brand-600 px-6 py-3 text-base font-semibold text-white shadow-sm transition hover:bg-brand-700 disabled:cursor-not-allowed disabled:opacity-60 sm:w-auto"
+              className="mt-5 inline-flex w-full items-center justify-center rounded-lg bg-slate-900 px-6 py-3 text-base font-semibold text-white shadow-sm transition hover:bg-slate-950 disabled:cursor-not-allowed disabled:opacity-60 sm:w-auto"
               data-cta="form-submit"
             >
               {status === "submitting" ? "Sending…" : "Send Inquiry"}

@@ -10,7 +10,7 @@ export default function ProductCard({ p }: { p: Product }) {
 
   return (
     <article className="group flex flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition hover:border-brand-300 hover:shadow-md">
-      <div className={`relative aspect-[4/3] bg-gradient-to-br ${p.gradient}`}>
+      <div className={`relative aspect-[4/3] ${p.bg}`}>
         {p.image ? (
           // eslint-disable-next-line @next/next/no-img-element
           <img src={p.image} alt={p.name} className="h-full w-full object-cover" loading="lazy" />
@@ -46,14 +46,21 @@ export default function ProductCard({ p }: { p: Product }) {
         </dl>
 
         <ul className="mt-4 flex flex-wrap gap-1.5">
-          {p.tags.map((t) => (
-            <li
-              key={t}
-              className="rounded-full border border-brand-100 bg-brand-50 px-2.5 py-0.5 text-[11px] font-medium text-brand-700"
-            >
-              {t}
-            </li>
-          ))}
+          {p.tags.map((t) => {
+            const highlighted = p.highlightTags?.includes(t);
+            return (
+              <li
+                key={t}
+                className={
+                  highlighted
+                    ? "rounded-full border border-accent-300 bg-accent-200 px-2.5 py-0.5 text-[11px] font-semibold text-slate-900"
+                    : "rounded-full border border-brand-300 bg-white px-2.5 py-0.5 text-[11px] font-medium text-brand-700"
+                }
+              >
+                {t}
+              </li>
+            );
+          })}
         </ul>
       </div>
     </article>

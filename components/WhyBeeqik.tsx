@@ -45,7 +45,7 @@ export default function WhyBeeqik() {
         <div className="mx-auto mt-12 grid max-w-5xl gap-8 lg:grid-cols-5">
           <div className="lg:col-span-2">
             <div className="rounded-2xl border border-slate-200 bg-slate-50 p-6 sm:p-8">
-              <p className="text-sm font-semibold uppercase tracking-wider text-brand-700">From the founder</p>
+              <p className="text-sm font-semibold uppercase tracking-wider text-accent-700">From the founder</p>
               <p className="mt-3 text-slate-700">
                 Years ago, I was on the other side of the table — an Alibaba seller. I spent
                 countless hours negotiating with buyers, handling factory production issues, and
@@ -58,7 +58,7 @@ export default function WhyBeeqik() {
               <ul className="mt-4 space-y-2">
                 {story.map((s) => (
                   <li key={s} className="flex items-start gap-2 text-slate-700">
-                    <svg className="mt-1 h-4 w-4 flex-none text-brand-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden>
+                    <svg className="mt-1 h-4 w-4 flex-none text-accent-500" viewBox="0 0 20 20" fill="currentColor" aria-hidden>
                       <path d="M16.7 5.3a1 1 0 0 1 0 1.4l-7.5 7.5a1 1 0 0 1-1.4 0L3.3 9.7a1 1 0 1 1 1.4-1.4l3.7 3.7 6.8-6.8a1 1 0 0 1 1.5.1Z" />
                     </svg>
                     <span>{s}</span>

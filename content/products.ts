@@ -13,8 +13,9 @@ export interface Product {
   moq?: string;
   leadTime?: string;
   tags: ProductTag[];
+  highlightTags?: ProductTag[];
   image?: string;
-  gradient: string;
+  bg: string;
 }
 
 export const PRODUCTS: Product[] = [
@@ -26,7 +27,7 @@ export const PRODUCTS: Product[] = [
     moq: "No MOQ",
     leadTime: "7 days",
     tags: ["Sample Available", "Custom Packaging", "Low MOQ", "Export Experience"],
-    gradient: "from-sky-400 via-blue-500 to-indigo-600",
+    bg: "bg-slate-500",
   },
   {
     slug: "dida-musical-instruments",
@@ -36,7 +37,7 @@ export const PRODUCTS: Product[] = [
     moq: "No MOQ",
     leadTime: "7 days",
     tags: ["Sample Available", "Custom Packaging", "Low MOQ", "Export Experience"],
-    gradient: "from-rose-400 via-fuchsia-500 to-purple-600",
+    bg: "bg-stone-500",
   },
   {
     slug: "aidpek-power-stations",
@@ -46,7 +47,7 @@ export const PRODUCTS: Product[] = [
     moq: "No MOQ",
     leadTime: "14 days",
     tags: ["Custom Packaging", "Low MOQ", "Export Experience"],
-    gradient: "from-emerald-400 via-teal-500 to-cyan-600",
+    bg: "bg-zinc-700",
   },
   {
     slug: "electronic-components",
@@ -56,7 +57,7 @@ export const PRODUCTS: Product[] = [
     moq: "No MOQ",
     leadTime: "14 days",
     tags: ["Custom Packaging", "Low MOQ", "Export Experience"],
-    gradient: "from-slate-500 via-slate-700 to-slate-900",
+    bg: "bg-slate-700",
   },
   {
     slug: "flashlights",
@@ -66,7 +67,7 @@ export const PRODUCTS: Product[] = [
     moq: "No MOQ",
     leadTime: "14 days",
     tags: ["Sample Available", "Custom Packaging", "Low MOQ", "Export Experience"],
-    gradient: "from-amber-400 via-orange-500 to-red-600",
+    bg: "bg-stone-600",
   },
   {
     slug: "home-care-series",
@@ -76,6 +77,6 @@ export const PRODUCTS: Product[] = [
     moq: "No MOQ",
     leadTime: "7 days",
     tags: ["Sample Available", "Custom Packaging", "Low MOQ", "Export Experience"],
-    gradient: "from-lime-400 via-green-500 to-emerald-600",
+    bg: "bg-zinc-500",
   },
 ];
